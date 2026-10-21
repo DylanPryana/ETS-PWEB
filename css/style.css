@@ -1,4 +1,3 @@
-/* ===== style tambahan buat LibraryReg ===== */
 /* warna utama biar sama kayak desain UI */
 :root {
   --biru-tua: #1E3A8A;
@@ -15,7 +14,7 @@ body {
   color: var(--gelap);
 }
 
-/* ---------- navbar ---------- */
+/*  navbar  */
 .navbar {
   border-bottom: 1px solid #E2E8F0;
 }
@@ -55,7 +54,7 @@ body {
   border-bottom: 2px solid var(--biru);
 }
 
-/* ---------- tombol ---------- */
+/* tombol */
 .btn-biru {
   background-color: var(--biru);
   color: white;
@@ -81,7 +80,7 @@ body {
   color: white;
 }
 
-/* ---------- hero ---------- */
+/* hero */
 .hero {
   background-color: var(--biru-muda);
   padding: 80px 0;
@@ -118,7 +117,7 @@ body {
   border-radius: 24px;
 }
 
-/* ---------- section umum ---------- */
+/* section umum */
 .bagian {
   padding: 80px 0;
 }
@@ -144,7 +143,7 @@ body {
   line-height: 1.8;
 }
 
-/* ---------- card layanan ---------- */
+/* card layanan */
 .card-layanan {
   border: 1px solid #E2E8F0;
   border-radius: 18px;
@@ -172,7 +171,7 @@ body {
   margin-bottom: 14px;
 }
 
-/* ---------- keunggulan ---------- */
+/* keunggulan */
 .ikon-centang {
   width: 30px;
   height: 30px;
@@ -186,7 +185,7 @@ body {
   flex-shrink: 0;
 }
 
-/* ---------- statistik ---------- */
+/* statistik */
 .statistik {
   background-color: var(--biru-tua);
   color: white;
@@ -210,7 +209,7 @@ body {
   color: var(--biru-pucat);
 }
 
-/* ---------- footer ---------- */
+/* footer */
 footer {
   background-color: var(--gelap);
   color: #CBD5E1;
@@ -230,7 +229,7 @@ footer h5 {
   font-size: 14px;
 }
 
-/* ---------- halaman form & tabel ---------- */
+/* halaman form & tabel */
 .halaman {
   background-color: var(--biru-muda);
   min-height: 75vh;
