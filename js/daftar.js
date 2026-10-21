@@ -1,10 +1,9 @@
-// ===== daftar.js =====
 // ngurusin form pendaftaran anggota
 
 let formDaftar = document.getElementById("formDaftar");
 
 formDaftar.addEventListener("submit", function (e) {
-  e.preventDefault(); // biar halaman ga reload
+  e.preventDefault(); 
 
   // ambil semua isi inputan
   let anggotaBaru = {
