@@ -11,7 +11,6 @@
   <link href="css/style.css" rel="stylesheet">
 
   <script>
-    // kalau belum login, langsung lempar ke halaman login
     if (sessionStorage.getItem("sudahLogin") !== "ya") {
       window.location.href = "login.html";
     }
@@ -85,7 +84,6 @@
               </tr>
             </thead>
             <tbody id="isiTabel">
-              <!-- baris tabel diisi lewat javascript -->
             </tbody>
           </table>
         </div>
