@@ -1,4 +1,3 @@
-// ===== login.js =====
 // login petugas cuma simulasi, username & password ditulis langsung di sini
 
 const USERNAME_PETUGAS = "admin";
@@ -17,7 +16,6 @@ document.getElementById("formLogin").addEventListener("submit", function (e) {
   let pesan = document.getElementById("pesanLogin");
 
   if (username === USERNAME_PETUGAS && password === PASSWORD_PETUGAS) {
-    // tandain udah login (ilang kalau tab ditutup)
     sessionStorage.setItem("sudahLogin", "ya");
     window.location.href = "anggota.html";
   } else {
