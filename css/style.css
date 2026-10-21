@@ -1,0 +1,258 @@
+/* ===== style tambahan buat LibraryReg ===== */
+/* warna utama biar sama kayak desain UI */
+:root {
+  --biru-tua: #1E3A8A;
+  --biru: #1D4ED8;
+  --biru-muda: #EFF6FF;
+  --biru-pucat: #DBEAFE;
+  --kuning: #FCD34D;
+  --gelap: #0F172A;
+  --abu: #475569;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  color: var(--gelap);
+}
+
+/* ---------- navbar ---------- */
+.navbar {
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.logo-kotak {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: var(--biru);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.nama-app {
+  font-weight: 800;
+  color: var(--biru-tua);
+  line-height: 1.1;
+}
+
+.sub-nama {
+  font-size: 12px;
+  color: var(--abu);
+}
+
+.navbar .nav-link {
+  color: #334155;
+  font-weight: 500;
+}
+
+/* penanda menu aktif */
+.navbar .nav-link.active {
+  color: var(--biru) !important;
+  font-weight: 700;
+  border-bottom: 2px solid var(--biru);
+}
+
+/* ---------- tombol ---------- */
+.btn-biru {
+  background-color: var(--biru);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn-biru:hover {
+  background-color: var(--biru-tua);
+  color: white;
+}
+
+.btn-garis {
+  border: 2px solid var(--biru);
+  color: var(--biru);
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.btn-garis:hover {
+  background-color: var(--biru);
+  color: white;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  background-color: var(--biru-muda);
+  padding: 80px 0;
+}
+
+.label-kecil {
+  display: inline-block;
+  background-color: var(--biru-pucat);
+  color: var(--biru-tua);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.15;
+}
+
+.hero h1 span {
+  color: var(--biru);
+}
+
+.hero p {
+  color: var(--abu);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.gambar-bulat {
+  width: 100%;
+  border-radius: 24px;
+}
+
+/* ---------- section umum ---------- */
+.bagian {
+  padding: 80px 0;
+}
+
+.bagian-abu {
+  background-color: #F8FAFC;
+}
+
+.judul-kecil {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--biru);
+}
+
+.judul-bagian {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.teks-abu {
+  color: var(--abu);
+  line-height: 1.8;
+}
+
+/* ---------- card layanan ---------- */
+.card-layanan {
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  padding: 28px 24px;
+  height: 100%;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.card-layanan:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.ikon-layanan {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background-color: var(--biru-pucat);
+  color: var(--biru);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+/* ---------- keunggulan ---------- */
+.ikon-centang {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #DCFCE7;
+  color: #15803D;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* ---------- statistik ---------- */
+.statistik {
+  background-color: var(--biru-tua);
+  color: white;
+  padding: 70px 0;
+}
+
+.kotak-angka {
+  background-color: #1E40AF;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+}
+
+.kotak-angka .angka {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--kuning);
+}
+
+.kotak-angka .ket {
+  color: var(--biru-pucat);
+}
+
+/* ---------- footer ---------- */
+footer {
+  background-color: var(--gelap);
+  color: #CBD5E1;
+  padding: 50px 0 24px;
+}
+
+footer h5 {
+  color: white;
+  font-weight: 700;
+}
+
+.garis-footer {
+  border-top: 1px solid #334155;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: #94A3B8;
+  font-size: 14px;
+}
+
+/* ---------- halaman form & tabel ---------- */
+.halaman {
+  background-color: var(--biru-muda);
+  min-height: 75vh;
+  padding: 50px 0;
+}
+
+.kotak-form {
+  background-color: white;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.table th {
+  background-color: var(--biru-pucat);
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+}

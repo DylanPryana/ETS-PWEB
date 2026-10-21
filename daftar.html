@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Anggota - LibraryReg</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <div class="logo-kotak"><i class="bi bi-book"></i></div>
+        <div>
+          <div class="nama-app">LibraryReg</div>
+          <div class="sub-nama">Perpustakaan Universitas</div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuUtama">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang Perpustakaan</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#layanan">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="anggota.html">Daftar Anggota</a></li>
+          <li class="nav-item"><a class="nav-link active" href="daftar.html">Pendaftaran Anggota</a></li>
+          <li class="nav-item"><a class="btn btn-biru px-3" href="login.html">Login Petugas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== FORM PENDAFTARAN ===== -->
+  <section class="halaman">
+    <div class="container" style="max-width: 860px;">
+      <div class="text-center mb-4">
+        <h1 class="fw-bold">Formulir Pendaftaran Anggota</h1>
+        <p class="teks-abu">Isi data di bawah ini dengan benar. Kolom bertanda <span class="text-danger">*</span> wajib diisi.</p>
+      </div>
+
+      <!-- tempat munculnya notifikasi berhasil / gagal -->
+      <div id="notifikasi"></div>
+
+      <div class="kotak-form">
+        <form id="formDaftar" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nama" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+              <input type="text" id="nama" class="form-control" placeholder="Masukkan nama lengkap">
+            </div>
+            <div class="col-md-6">
+              <label for="nomorInduk" class="form-label">NIM / NIP <span class="text-danger">*</span></label>
+              <input type="text" id="nomorInduk" class="form-control" placeholder="Masukkan NIM atau NIP">
+            </div>
+            <div class="col-md-6">
+              <label for="prodi" class="form-label">Program Studi <span class="text-danger">*</span></label>
+              <select id="prodi" class="form-select">
+                <option value="">-- Pilih program studi --</option>
+                <option>Teknik Informatika</option>
+                <option>Sistem Informasi</option>
+                <option>Teknologi Informasi</option>
+                <option>Teknik Elektro</option>
+                <option>Teknik Sipil</option>
+                <option>Matematika</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="jenis" class="form-label">Jenis Keanggotaan <span class="text-danger">*</span></label>
+              <select id="jenis" class="form-select">
+                <option value="">-- Pilih jenis keanggotaan --</option>
+                <option>Mahasiswa</option>
+                <option>Dosen</option>
+                <option>Tenaga Kependidikan</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="telepon" class="form-label">Nomor Telepon <span class="text-danger">*</span></label>
+              <input type="tel" id="telepon" class="form-control" placeholder="08xxxxxxxxxx">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="nama@email.com">
+            </div>
+            <div class="col-12">
+              <label for="alamat" class="form-label">Alamat <span class="text-danger">*</span></label>
+              <textarea id="alamat" class="form-control" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end gap-2 mt-4">
+            <button type="reset" class="btn btn-outline-secondary px-4">Reset</button>
+            <button type="submit" class="btn btn-biru px-4"><i class="bi bi-send me-1"></i> Daftar Sekarang</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>LibraryReg</h5>
+          <p>Aplikasi pendaftaran anggota Perpustakaan Universitas secara online.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Kontak</h5>
+          <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Gedung Perpustakaan Universitas</p>
+          <p class="mb-1"><i class="bi bi-envelope me-2"></i>perpustakaan@kampus.ac.id</p>
+          <p class="mb-1"><i class="bi bi-telephone me-2"></i>(031) 000-0000</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Jam Layanan</h5>
+          <p class="mb-1">Senin – Jumat: 08.00 – 16.00</p>
+          <p class="mb-1">Sabtu: 08.00 – 12.00</p>
+          <p class="mb-1">Minggu &amp; hari libur: Tutup</p>
+        </div>
+      </div>
+      <div class="garis-footer text-center">© 2026 LibraryReg – Perpustakaan Universitas</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/daftar.js"></script>
+</body>
+</html>
