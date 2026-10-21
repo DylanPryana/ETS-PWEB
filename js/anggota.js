@@ -1,4 +1,3 @@
-// ===== anggota.js =====
 // halaman petugas: tampil tabel, cari, detail, edit, hapus
 
 let isiTabel = document.getElementById("isiTabel");
@@ -9,7 +8,7 @@ let modalEdit = new bootstrap.Modal(document.getElementById("modalEdit"));
 // nyimpen index anggota yang lagi diedit
 let indexDiedit = -1;
 
-// ---------- tampilkan tabel ----------
+// tampilkan tabel
 function tampilkanTabel() {
   let semuaAnggota = ambilAnggota();
   let kataCari = inputCari.value.trim().toLowerCase();
@@ -52,7 +51,7 @@ function tampilkanTabel() {
   document.getElementById("infoJumlah").textContent = "Menampilkan " + nomor + " dari " + semuaAnggota.length + " anggota";
 }
 
-// ---------- detail ----------
+// detail 
 function lihatDetail(index) {
   let a = ambilAnggota()[index];
 
@@ -70,7 +69,7 @@ function lihatDetail(index) {
   modalDetail.show();
 }
 
-// ---------- edit ----------
+// edit
 function bukaEdit(index) {
   let a = ambilAnggota()[index];
   indexDiedit = index;
@@ -134,7 +133,7 @@ document.getElementById("formEdit").addEventListener("submit", function (e) {
   tampilkanNotif("notifikasi", "Data <b>" + amankanTeks(dataBaru.nama) + "</b> berhasil diperbarui.", "success");
 });
 
-// ---------- hapus ----------
+// hapus
 function hapusAnggota(index) {
   let semuaAnggota = ambilAnggota();
   let nama = semuaAnggota[index].nama;
@@ -151,7 +150,7 @@ function hapusAnggota(index) {
   tampilkanNotif("notifikasi", "Data <b>" + amankanTeks(nama) + "</b> berhasil dihapus.", "success");
 }
 
-// ---------- logout ----------
+// logout
 document.getElementById("tombolLogout").addEventListener("click", function () {
   sessionStorage.removeItem("sudahLogin");
   window.location.href = "login.html";
